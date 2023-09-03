@@ -74,7 +74,7 @@ class AnagramTest {
             "William Shakespeare = I'll make a wise phrase"},
             delimiterString = " = ")
     public void testCompareEqual(String textL, String textR) {
-        Assertions.assertTrue(Anagram.isAnagramOf(textL,textR), " The two text are anagramm of each other: " + textL+"("+Anagram.key(textL)+")"+ "~=" + textR+"("+Anagram.key(textR)+")");
+        Assertions.assertTrue(Anagram.isAnagramOf(textL,textR), " The two text are anagram of each other: " + textL+"("+Anagram.key(textL)+")"+ "~=" + textR+"("+Anagram.key(textR)+")");
     }
 
     @ParameterizedTest
@@ -95,6 +95,6 @@ class AnagramTest {
             "state = tastetaste"},
             delimiterString = " = ")
     public void testCompareUnequal(String textL, String textR) {
-        Assertions.assertFalse(Anagram.isAnagramOf(textL,textR), " The two text are anagramm of each other: " + textL + "~=" + textR);
+        Assertions.assertFalse(Anagram.isAnagramOf(textL,textR), " The two text are anagram of each other: " + textL + "~=" + textR);
     }
 }
