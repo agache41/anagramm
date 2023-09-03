@@ -41,10 +41,40 @@ class AnagramTest {
             "players = parsley",
             "sadder = dreads",
             "save = vase",
-            "state = taste"},
+            "state = taste",
+            "a gentleman = elegant man",
+            "astronomer = moon starer",
+            "Christmas = trims cash",
+            "conversation = voices rant on",
+            "dormitory = dirty room",
+            "eleven plus two = twelve plus one",
+            "Fourth of July = joyful Fourth",
+            "listen = silent",
+            "schoolmaster = the classroom",
+            "slot machines = cash lost in 'em",
+            "snooze alarms = alas, no more Z's",
+            "the detectives = detect thieves",
+            "the eyes = they see",
+            "the Morse Code = here come dots",
+            "vacation time = I am not active",
+            "Clint Eastwood = old west action",
+            "Elvis Presley = Presley lives",
+            "Emily Dickinson = income is kindly",
+            "George Bush = he bugs Gore",
+            "Jim Morrison = Mr. Mojo Risin'",
+            "Madam Curie = radium mace",
+            "Madonna Louise Ciccone = one cool dance musician",
+            "Michael Jordan = jam on, rich deal",
+            "Ronald Reagan = A darn long era",
+            "Russell Crowe = scowler rules",
+            "Saoirse Ronan = rare as onions",
+            "Shaquille O'Neal = one equals a hill",
+            "Thomas Edison = notes said \"Ohm\"",
+            "T.S. Eliot = toilets",
+            "William Shakespeare = I'll make a wise phrase"},
             delimiterString = " = ")
     public void testCompareEqual(String textL, String textR) {
-        Assertions.assertTrue(Anagram.isAnagramOf(textL,textR), " The two text are anagramm of each other: " + textL + "~=" + textR);
+        Assertions.assertTrue(Anagram.isAnagramOf(textL,textR), " The two text are anagramm of each other: " + textL+"("+Anagram.key(textL)+")"+ "~=" + textR+"("+Anagram.key(textR)+")");
     }
 
     @ParameterizedTest

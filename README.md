@@ -18,6 +18,8 @@ foo -> #102=1#111=2
 angel -> #97=1#101=1#103=1#108=1#110=1
 glean -> #97=1#101=1#103=1#108=1#110=1
 The chosen format is [#CharacterCode=Count]* repeated for every character and ordered by CharacterCode. 
+The text is converted to lowercase and some characters are being removed :  ,:;'*+=(){}!§$%&/"><|._-#`´?!
+This can be further configured.
 
 By comparing the keys then we can than determine if the two texts are anagram of each other.
 
@@ -29,6 +31,7 @@ contains the same letters but the count may vary. A different equals will be the
 
 To test it use the main function or browse the tests. 
 Feel free to add new entries in the test parametrisation.
+Test examples from : https://www.yourdictionary.com/articles/examples-anagrams-functions
 
 Mit freundlichen Grüßen,
 regards,
