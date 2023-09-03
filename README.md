@@ -31,12 +31,11 @@ contains the same letters but the count may vary. A different equals will be the
 
 To test it use the main function or browse the tests. 
 Feel free to add new entries in the test parametrisation.
-Test examples from : https://www.yourdictionary.com/articles/examples-anagrams-functions
+Test examples from : 
+https://www.yourdictionary.com/articles/examples-anagrams-functions
 
 Mit freundlichen Grüßen,
 regards,
--------------------------------------------------------------------
 Alexandru Agache
 eMail:agache41@yahoo.com
--------------------------------------------------------------------
 Mob: 015167765317
