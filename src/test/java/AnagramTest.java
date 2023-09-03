@@ -44,7 +44,7 @@ class AnagramTest {
             "state = taste"},
             delimiterString = " = ")
     public void testCompareEqual(String textL, String textR) {
-        Assertions.assertEquals(Anagram.key(textL), Anagram.key(textR), " The two text are anagramm of each other: " + textL + "~=" + textR);
+        Assertions.assertTrue(Anagram.isAnagramOf(textL,textR), " The two text are anagramm of each other: " + textL + "~=" + textR);
     }
 
     @ParameterizedTest
@@ -65,6 +65,6 @@ class AnagramTest {
             "state = tastetaste"},
             delimiterString = " = ")
     public void testCompareUnequal(String textL, String textR) {
-        Assertions.assertNotEquals(Anagram.key(textL), Anagram.key(textR), " The two text are anagramm of each other: " + textL + "~=" + textR);
+        Assertions.assertFalse(Anagram.isAnagramOf(textL,textR), " The two text are anagramm of each other: " + textL + "~=" + textR);
     }
 }

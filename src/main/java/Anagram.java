@@ -16,12 +16,17 @@ public class Anagram {
                    .collect(Collectors.joining());
     }
 
+    public static boolean isAnagramOf(String textL, String textR) {
+        return Objects.equals(Anagram.key(textL), Anagram.key(textR));
+    }
+
+
     public static void main(String[] args) {
         if (args.length < 2) {
             System.out.println("Not enough parameters! \r\n Use java Anagram textL textR to compare ");
             return;
         }
-        if (Objects.equals(Anagram.key(args[0]), Anagram.key(args[1])))
+        if (isAnagramOf(args[0], args[1]))
             System.out.println(" The two texts are anagram-equal!");
         else
             System.out.println(" The two texts are not anagram-equal!");
